@@ -1,0 +1,36 @@
+@use '../variable'
+
+#content
+    padding: 1rem 
+    
+
+#nav
+    background-color: variable.$bg-color
+    border-radius: variable.$container-border-radius
+    display: flex
+    justify-content: space-evenly
+    width: 100%
+
+    div
+        display: flex
+        gap: 10px
+        height: 10%
+        align-items: center
+        color: variable.$text-color
+        background: none
+        font-size: 28px
+        padding: 2rem
+        width: 100%
+        justify-content: center
+        border-radius: variable.$container-border-radius
+
+    div:hover
+        cursor: pointer
+
+    #skills:hover
+        background: variable.$gradient
+
+    #projects:hover
+        background: variable.$gradient
+        
+   

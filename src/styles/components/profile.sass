@@ -1,0 +1,98 @@
+@use '../variable'
+
+@use '../mixins'
+
+#profile
+    background-color: variable.$bg-color
+    flex: 1 1 0
+    border-radius: variable.$container-border-radius
+    display: flex
+    align-items: center
+    flex-direction: column
+    text-align: center
+    position: relative
+    padding: 3rem 0
+    gap: 30px
+
+#profile section svg
+    transform: scale(1.4)
+
+#profile section svg path
+    fill: #575353
+    stroke-width: 1
+    stroke: none
+#profile section #whatsapp path
+    stroke-dasharray: 90
+    stroke-dashoffset: 0
+
+#profile section #linkedin path,
+#profile section #linkedin rect,
+#profile section #linkedin circle
+    stroke-dasharray: 80
+    stroke-dashoffset: 0
+
+#profile section #git path
+  stroke-dasharray: 90
+  stroke-dashoffset: 0
+
+#profile section #whatsapp:hover path
+    animation: animate-whatsapp 2s linear forwards
+    stroke: var(--title-color)
+
+#profile section #linkedin:hover path,
+#profile section #linkedin:hover rect,
+#profile section #linkedin:hover circle
+    animation: animate-linkedin 2s linear forwards
+    stroke: var(--title-color)
+
+@keyframes animate-linkedin
+    40%
+        stroke-dashoffset: 0
+    0%
+        stroke-dashoffset: 80
+
+#profile section #git:hover path
+    animation: animate-git 2s linear forwards
+    stroke: var(--title-color)
+
+@keyframes animate-git
+    40%
+        stroke-dashoffset: 0
+    0%
+        stroke-dashoffset: 90
+
+@keyframes animate-whatsapp
+    40%
+        stroke-dashoffset: 0
+    0%
+        stroke-dashoffset: 90
+
+#profile section
+    margin-top: 15px
+    display: flex
+    gap: 40px
+
+img
+    max-width: 70%
+    border-radius: variable.$container-border-radius
+    top: -3rem
+
+    .icons
+        display: flex
+        color: variable.$text-color-secondary
+        border-radius: variable.$card-border-radius
+        margin-top: 12rem
+        padding: .8rem 1.2rem
+        gap: 10px
+
+.btn
+    @include mixins.btn
+    transition: .3s
+    &:hover
+        background: variable.$gradient-darker
+    
+
+
+
+
+    

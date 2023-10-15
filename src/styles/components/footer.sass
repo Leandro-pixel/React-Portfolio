@@ -1,0 +1,82 @@
+@use '../variable'
+
+#footer
+    
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    padding: 1rem
+    gap: 3rem
+    background: variable.$body-bg-color
+    align-items: center
+
+    h1
+        color: variable.$text-color
+        font-size: 2.5rem
+        margin-bottom: 3rem
+        background: variable.$gradient
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+
+    #forms
+        display: flex
+        align-items: center
+        gap: 15rem
+
+        p
+            color: variable.$text-color
+            font-size: 1.3rem
+            width: 30rem
+            display: flex
+            flex-direction: column
+            align-items: center
+
+            span
+                font-size: 10rem
+
+        form
+            display: flex
+            flex-direction: column
+            color: variable.$text-color
+            gap: 5px
+
+            label
+                padding-top: 10px
+
+            .input_email
+                display: flex
+                align-items: center
+
+            .input_email input 
+                padding-left: 36px
+                border-radius: 6px
+                width: 80%
+                height: 30px
+                border: none
+                background-color: variable.$body-bg-color
+                caret-color: variable.$text-color
+                color: variable.$text-color
+
+            input:hover 
+                border: 1px solid variable.$text-color
+
+        textarea 
+            margin-top: 20px
+            background-color: variable.$body-bg-color
+            color: variable.$text-color
+            resize: none
+            scrollbar-width: thin
+            border: none
+            border-radius: 6px
+
+        textarea:hover 
+                border: 1px solid variable.$text-color
+
+
+        textarea::-webkit-scrollbar 
+            width: 8px
+  
+  
+
+            .btn
+                width: 50%
