@@ -37,7 +37,7 @@ const Context = createContext<ContextProps>({
      setNextjs: () => {},
 });
 
-export const ContextProvider = ({ children }) => {
+export const ContextProvider = ({ children }: { children: React.ReactNode }) => {
     const [render, setRender] = useState('');
     const [skills, setSkills] = useState(true);
     const [projects, setProjects] = useState(false);
