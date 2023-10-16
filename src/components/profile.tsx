@@ -1,5 +1,6 @@
 
 import '../styles/components/profile.sass'
+import '../styles/mediaQ.sass'
 import Avatar from '../img/me.jpeg'
 
 const Profile = () => {
