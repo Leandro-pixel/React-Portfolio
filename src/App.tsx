@@ -1,7 +1,6 @@
 import "./styles/components/app.sass"
 import Profile from "./components/profile"
 import Nav from "./components/nav"
-import './styles/mediaQ.sass'
 
 import { useGlobalContext } from './context/store';
 import ContentProject from "./components/projects/contentProjects";

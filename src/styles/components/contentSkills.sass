@@ -1,4 +1,5 @@
 @use '../variable'
+@use '../mixins'
 
 #skillsContent
     
@@ -8,11 +9,21 @@
     gap: 1rem
     height: 100%
     align-items: center
+    @include mixins.md
+        display: flex
+        flex-direction: column
+    @include mixins.lg
+        display: flex
+        flex-direction: column
 
     aside
         display: flex
         flex-direction: column
         gap: 4px
+        @include mixins.lg
+            display: flex
+            flex-direction: row
+            
 
         .btn
             text-align: center

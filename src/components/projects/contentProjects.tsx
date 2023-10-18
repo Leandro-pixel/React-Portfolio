@@ -1,5 +1,6 @@
 
 import '../../styles/components/contentProject.sass'
+
 import { useGlobalContext } from '../../context/store';
 import CountdownGif from '../../gifs/Countdown.gif'
 import webMessengerGif from '../../gifs/webMessengerGIF.gif'
