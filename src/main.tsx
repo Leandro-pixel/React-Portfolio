@@ -12,8 +12,11 @@ import "./styles/main.sass";
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <ContextProvider>
+      <div className="appWrapper">
       <App />
       <Footer/>
+      </div>
+      
     </ContextProvider>
   </React.StrictMode>,
 )
