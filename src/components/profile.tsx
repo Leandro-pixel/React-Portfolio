@@ -1,6 +1,8 @@
 
 import '../styles/components/profile.sass'
 import Avatar from '../img/me.jpeg'
+import  i18n  from '../translate/i18n'
+//import React, { useState } from 'react'
 
 const Profile = () => {
     return (
@@ -23,8 +25,8 @@ const Profile = () => {
 
             </section>
 
-            <a href="" className="btn">
-                download curriculum
+            <a href="" className="My-btn">
+                {i18n.t('links.resume')}
             </a>
             
         </aside>

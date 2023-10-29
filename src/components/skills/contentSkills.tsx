@@ -5,6 +5,7 @@ import React from '../../img/links/react.svg'
 import Next from '../../img/links/nextjs.svg'
 import Type from '../../img/links/typescript.svg'
 import Sass from '../../img/links/sass.svg'
+import  i18n  from '../../translate/i18n'
 
 
 
@@ -16,7 +17,7 @@ const ContentSkills = () => {
         <div id='skillsContent'>
 
             <aside>
-            <div className='btn' onClick={()=>{   
+            <div className='My-btn' onClick={()=>{   
                 setRender('type');
                 }}>
                     
@@ -24,7 +25,7 @@ const ContentSkills = () => {
                             
             </div>
 
-            <div className='btn'onClick={()=>{   
+            <div className='My-btn'onClick={()=>{   
                 setRender('');
                 setRender('sass');
                 }}>
@@ -33,7 +34,7 @@ const ContentSkills = () => {
                             
             </div>
 
-            <div className='btn'onClick={()=>{   
+            <div className='My-btn'onClick={()=>{   
                 setRender('');
                 setRender('react');
                 }}>
@@ -42,12 +43,12 @@ const ContentSkills = () => {
                             
             </div>
 
-            <div className='btn'onClick={()=>{   
+            <div className='My-btn'onClick={()=>{   
                 setRender('');
                 setRender('next');
                 }}>
                     
-                    <span className='btn' >Nextjs</span>
+                    <span className='text' >Nextjs</span>
                             
             </div>
             
@@ -59,10 +60,7 @@ const ContentSkills = () => {
                 <div id="typescript" className={`item`}>
                     <img src={Type} alt="" />
                     <span>
-                        TypeScript é uma linguagem de programação de código aberto desenvolvida
-                        pela Microsoft que estende o JavaScript, adicionando tipos estáticos e outros recursos avançados.
-                        Ele é frequentemente usado para desenvolvimento de aplicativos da web e,
-                        em particular, com o framework Angular.
+                    {i18n.t('TecDesc.Type')}
                     </span>
                 </div>
             )}
@@ -71,9 +69,7 @@ const ContentSkills = () => {
                 <div id="sass" className={`item`}>
                     <img src={Sass} alt="" />
                     <span>
-                    Sass, que significa "Syntactically Awesome Style Sheets," é uma linguagem de 
-                    folha de estilo que estende o CSS (Cascading Style Sheets). O objetivo do Sass é simplificar e 
-                    tornar mais eficiente o processo de criação e manutenção de folhas de estilo para a web.
+                    {i18n.t('TecDesc.Sass')}
                     </span>
                 </div>
             )}
@@ -82,9 +78,7 @@ const ContentSkills = () => {
                 <div id='react' className={`item`}>
                     <img src={React} alt="" />
                     <span>
-                    React é uma biblioteca JavaScript de código aberto amplamente utilizada para desenvolvimento 
-                    de interfaces de usuário interativas e dinâmicas. Ela foi desenvolvida pelo Facebook e é 
-                    mantida pela comunidade de código aberto.
+                    {i18n.t('TecDesc.React')}
                     </span>
                 </div>
             )}
@@ -93,9 +87,7 @@ const ContentSkills = () => {
                 <div id="next" className={`item`}>
                     <img src={Next} alt="" />
                     <span>
-                    Next.js é um framework de código aberto para React que é utilizado para desenvolvimento 
-                    de aplicativos web, oferecendo recursos avançados e soluções para construção de aplicações 
-                    web escaláveis e de alto desempenho
+                    {i18n.t('TecDesc.Next')}
                     </span>
                 </div>
             )}
