@@ -92,6 +92,8 @@
             scrollbar-width: thin
             border: none
             border-radius: 6px
+            @include mixins.lg
+                width: 70%
 
         textarea:hover 
                 border: 1px solid variable.$text-color
@@ -102,7 +104,8 @@
   
   
 
-            .btn
+        .My-btn
+            width: 50%
+            @include mixins.lg
                 width: 50%
-                @include mixins.lg
-                    width: 50%
+           

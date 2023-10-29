@@ -25,12 +25,10 @@ function App() {
       I18N_STORAGE_KEY,
       selectedLanguage
     )
-    history.replaceState(null, "", '/React-Portfolio/skills');
+    history.replaceState(null, "", '/React-Portfolio');
     window.location = window.location
     
   }
-
-  
 
   return (
     <div id="appContent">
