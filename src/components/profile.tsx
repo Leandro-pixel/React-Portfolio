@@ -25,7 +25,7 @@ const Profile = () => {
 
             </section>
 
-            <a href="" className="My-btn">
+            <a href="https://drive.google.com/file/d/1IjBk8rMxQhR60HXUi4Cw1eEEZtkRVeHR/view?usp=sharing" className="My-btn">
                 {i18n.t('links.resume')}
             </a>
             
